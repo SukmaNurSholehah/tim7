@@ -26,21 +26,86 @@ public class niken extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        foto = new javax.swing.JLabel();
+        NIM = new javax.swing.JLabel();
+        Nama = new javax.swing.JLabel();
+        Prodi = new javax.swing.JLabel();
+        alamat = new javax.swing.JLabel();
+        alamat2 = new javax.swing.JLabel();
+        b_kembali = new javax.swing.JButton();
+        backgrpund = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+
+        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.setPreferredSize(new java.awt.Dimension(730, 497));
+        jPanel1.setLayout(null);
+
+        foto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tim/pkg7/pbo/Gambar/Desain tanpa judul (6).png"))); // NOI18N
+        jPanel1.add(foto);
+        foto.setBounds(60, 130, 210, 200);
+
+        NIM.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        NIM.setText("NIM : 2024.57201.057");
+        jPanel1.add(NIM);
+        NIM.setBounds(270, 210, 200, 16);
+
+        Nama.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Nama.setText("Nama : Niken Ayu Zaskia Fironica");
+        jPanel1.add(Nama);
+        Nama.setBounds(270, 150, 200, 16);
+
+        Prodi.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Prodi.setText("Prodi : Sistem Informasi");
+        jPanel1.add(Prodi);
+        Prodi.setBounds(270, 180, 200, 16);
+
+        alamat.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        alamat.setText("Alamat : Ds. Kedungrejo, Tanjunganom");
+        jPanel1.add(alamat);
+        alamat.setBounds(270, 240, 230, 16);
+
+        alamat2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        alamat2.setText("Nganjuk");
+        jPanel1.add(alamat2);
+        alamat2.setBounds(270, 260, 70, 16);
+
+        b_kembali.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        b_kembali.setText("KEMBALI");
+        b_kembali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_kembaliActionPerformed(evt);
+            }
+        });
+        jPanel1.add(b_kembali);
+        b_kembali.setBounds(400, 400, 100, 30);
+
+        backgrpund.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tim/pkg7/pbo/Gambar/BIO DATA ANGGOTA KELOMPOK (3).png"))); // NOI18N
+        jPanel1.add(backgrpund);
+        backgrpund.setBounds(0, 0, 530, 450);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 532, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 451, Short.MAX_VALUE)
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void b_kembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_kembaliActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_b_kembaliActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +143,14 @@ public class niken extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel NIM;
+    private javax.swing.JLabel Nama;
+    private javax.swing.JLabel Prodi;
+    private javax.swing.JLabel alamat;
+    private javax.swing.JLabel alamat2;
+    private javax.swing.JButton b_kembali;
+    private javax.swing.JLabel backgrpund;
+    private javax.swing.JLabel foto;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
