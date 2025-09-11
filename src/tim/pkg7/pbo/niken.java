@@ -34,6 +34,7 @@ public class niken extends javax.swing.JFrame {
         alamat = new javax.swing.JLabel();
         alamat2 = new javax.swing.JLabel();
         b_kembali = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         backgrpund = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -82,6 +83,11 @@ public class niken extends javax.swing.JFrame {
         });
         jPanel1.add(b_kembali);
         b_kembali.setBounds(400, 400, 100, 30);
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel1.setText("Github : https://github.com/Nikenzsk6 ");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(270, 290, 230, 16);
 
         backgrpund.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tim/pkg7/pbo/Gambar/BIO DATA ANGGOTA KELOMPOK (3).png"))); // NOI18N
         jPanel1.add(backgrpund);
@@ -151,6 +157,7 @@ public class niken extends javax.swing.JFrame {
     private javax.swing.JButton b_kembali;
     private javax.swing.JLabel backgrpund;
     private javax.swing.JLabel foto;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
