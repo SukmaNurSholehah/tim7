@@ -181,9 +181,7 @@ public class naila extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPnailaLayout.createSequentialGroup()
-                        .addComponent(jLabel12)
-                        .addGap(18, 18, 18)))
+                    .addComponent(jLabel12))
                 .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPnailaLayout.createSequentialGroup()
                         .addGap(39, 39, 39)
@@ -293,6 +291,7 @@ public class naila extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBkembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBkembaliActionPerformed
