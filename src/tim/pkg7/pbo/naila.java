@@ -15,6 +15,7 @@ public class naila extends javax.swing.JFrame {
      */
     public naila() {
         initComponents();
+        
     }
 
     /**
@@ -27,7 +28,7 @@ public class naila extends javax.swing.JFrame {
     private void initComponents() {
 
         jPnaila = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabelFoto = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLbiodata = new javax.swing.JLabel();
@@ -47,15 +48,25 @@ public class naila extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jBkembali = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPnaila.setBackground(new java.awt.Color(153, 153, 255));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\naila\\OneDrive\\Documents\\NetBeansProjects\\tim7\\src\\tim\\pkg7\\pbo\\foto\\fotonailaaa.png")); // NOI18N
-        jLabel3.setText("jLabel3");
-        jLabel3.setBorder(new javax.swing.border.MatteBorder(null));
+        jLabelFoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tim/pkg7/pbo/foto/fotonailaaa.png"))); // NOI18N
+        jLabelFoto.setText("jLabel3");
+        jLabelFoto.setBorder(new javax.swing.border.MatteBorder(null));
+        jLabelFoto.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jLabelFotoAncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -111,23 +122,23 @@ public class naila extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel1.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Nama    : Naila Binti Fauziah");
 
-        jLabel2.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("NIM      : 202457201056");
 
-        jLabel5.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Prodi     : Sistem Informasi");
 
-        jLabel6.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Alamat  : Dsn. Krajan, Ds. Senggowar");
 
-        jLabel7.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Kec. Gondang, Kab. Nganjuk");
 
@@ -148,14 +159,18 @@ public class naila extends javax.swing.JFrame {
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tim/pkg7/pbo/foto/icons8-grass-64.png"))); // NOI18N
 
-        jButton1.setBackground(new java.awt.Color(51, 102, 255));
-        jButton1.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
-        jButton1.setText("KEMBALI");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jBkembali.setBackground(new java.awt.Color(51, 102, 255));
+        jBkembali.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        jBkembali.setText("KEMBALI");
+        jBkembali.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jBkembaliActionPerformed(evt);
             }
         });
+
+        jLabel19.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setText("Link GitHub :  https://github.com/Nailafzyh");
 
         javax.swing.GroupLayout jPnailaLayout = new javax.swing.GroupLayout(jPnaila);
         jPnaila.setLayout(jPnailaLayout);
@@ -165,43 +180,50 @@ public class naila extends javax.swing.JFrame {
             .addGroup(jPnailaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12))
-                .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPnailaLayout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPnailaLayout.createSequentialGroup()
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGap(30, 30, 30))
-                                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPnailaLayout.createSequentialGroup()
-                                    .addComponent(jLabel15)
-                                    .addGap(74, 74, 74)))
-                            .addComponent(jLabel7)))
-                    .addGroup(jPnailaLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel16))
+                        .addComponent(jLabel12)
+                        .addGap(18, 18, 18)))
+                .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPnailaLayout.createSequentialGroup()
                         .addGap(39, 39, 39)
-                        .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPnailaLayout.createSequentialGroup()
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel10))
-                            .addComponent(jLabel18))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addComponent(jLabel9)))
+                        .addComponent(jLabel18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
+                        .addComponent(jBkembali)
+                        .addGap(22, 22, 22))
                     .addGroup(jPnailaLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel17)))
-                .addGap(18, 18, 18))
+                        .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPnailaLayout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPnailaLayout.createSequentialGroup()
+                                            .addGap(17, 17, 17)
+                                            .addComponent(jLabel8)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jLabel10)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jLabel9)))
+                                    .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel7)
+                                        .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addGroup(jPnailaLayout.createSequentialGroup()
+                                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addGap(30, 30, 30))
+                                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPnailaLayout.createSequentialGroup()
+                                                .addComponent(jLabel15)
+                                                .addGap(74, 74, 74))))))
+                            .addGroup(jPnailaLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel16)
+                                    .addComponent(jLabel17))))
+                        .addGap(18, 18, 18))))
         );
         jPnailaLayout.setVerticalGroup(
             jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -215,45 +237,43 @@ public class naila extends javax.swing.JFrame {
                 .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPnailaLayout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPnailaLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPnailaLayout.createSequentialGroup()
-                                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPnailaLayout.createSequentialGroup()
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel10)
-                                                    .addGroup(jPnailaLayout.createSequentialGroup()
-                                                        .addGap(25, 25, 25)
-                                                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                            .addGroup(jPnailaLayout.createSequentialGroup()
-                                                .addGap(32, 32, 32)
-                                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPnailaLayout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(jLabel16))))
+                                        .addGap(39, 39, 39)
+                                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPnailaLayout.createSequentialGroup()
+                                        .addGap(37, 37, 37)
+                                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(jPnailaLayout.createSequentialGroup()
-                                .addGap(28, 28, 28)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(39, 39, 39)
+                                .addComponent(jLabel10))))
+                    .addGroup(jPnailaLayout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addComponent(jLabelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel12))
+                .addGap(31, 31, 31)
                 .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPnailaLayout.createSequentialGroup()
-                        .addGap(47, 47, 47)
+                        .addGap(17, 17, 17)
+                        .addComponent(jLabel16)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPnailaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPnailaLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1)
+                        .addComponent(jBkembali)
                         .addGap(55, 55, 55))))
         );
 
@@ -261,20 +281,31 @@ public class naila extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPnaila, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPnaila, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPnaila, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPnaila, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jBkembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBkembaliActionPerformed
         // TODO add your handling code here:
         dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jBkembaliActionPerformed
+
+    private void jLabelFotoAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jLabelFotoAncestorAdded
+        // TODO add your handling code here:
+        jLabelFoto.setIcon(new javax.swing.ImageIcon(
+                getClass().getResource("/tim/pkg7/pbo/foto/fotonailaaa.png")
+        ));
+    }//GEN-LAST:event_jLabelFotoAncestorAdded
 
     /**
      * @param args the command line arguments
@@ -312,7 +343,7 @@ public class naila extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jBkembali;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -323,14 +354,15 @@ public class naila extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelFoto;
     private javax.swing.JLabel jLbiodata;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPnaila;
