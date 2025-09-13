@@ -129,7 +129,7 @@ public class riyadlus extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(410, 403, 93, 30);
 
-        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\Public\\Documents\\tim7\\src\\tim\\pkg7\\pbo\\foto\\WhatsApp Image 2025-09-10 at 16.18.52_706f6ecf.jpg")); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tim/pkg7/pbo/foto/WhatsApp Image 2025-09-10 at 16.18.52_706f6ecf.jpg"))); // NOI18N
         jPanel1.add(jLabel14);
         jLabel14.setBounds(6, 44, 121, 168);
 
@@ -156,14 +156,13 @@ public class riyadlus extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        System.out.println("Program mulai");
-    new riyadlus().setVisible(true);
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
