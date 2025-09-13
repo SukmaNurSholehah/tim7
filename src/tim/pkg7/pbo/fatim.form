@@ -248,7 +248,7 @@
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\This PC\Downloads\zazaa (1).jpg"/>
+              <Image iconType="3" name="/tim/pkg7/pbo/foto/zazaa (1).jpg"/>
             </Property>
           </Properties>
         </Component>
