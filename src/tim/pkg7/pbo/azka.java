@@ -34,9 +34,9 @@ public class azka extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         jLabel10.setText("jLabel10");
@@ -78,10 +78,6 @@ public class azka extends javax.swing.JFrame {
         jPanel2.add(jLabel2);
         jLabel2.setBounds(130, 30, 242, 48);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\USER\\Pictures\\baru...jpg")); // NOI18N
-        jPanel2.add(jLabel1);
-        jLabel1.setBounds(10, 100, 198, 230);
-
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton1.setText("KEMBALI");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -98,10 +94,15 @@ public class azka extends javax.swing.JFrame {
         jPanel2.add(jLabel7);
         jLabel7.setBounds(220, 260, 290, 20);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\USER\\Pictures\\baru...jpg")); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel2.add(jLabel1);
+        jLabel1.setBounds(20, 120, 180, 190);
+
         jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\USER\\Pictures\\188743-883619745_large-ezgif.com-video-to-gif-converter,,.gif")); // NOI18N
         jLabel4.setText("jLabel4");
         jPanel2.add(jLabel4);
-        jLabel4.setBounds(0, 0, 520, 460);
+        jLabel4.setBounds(0, 0, 520, 450);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
