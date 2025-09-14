@@ -203,6 +203,7 @@ public class mainFrame extends javax.swing.JFrame {
 
     private void bNikenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNikenActionPerformed
         // TODO add your handling code here:
+        new niken().setVisible(true);
         bNiken.setBackground(new Color(0, 123, 255));  
         bSukma.setBackground(new Color(51, 51, 51));
         bNaila.setBackground(new Color(51, 51, 51));
