@@ -121,6 +121,7 @@ public class riyadlus extends javax.swing.JFrame {
         jLabel13.setBounds(219, 78, 110, 16);
 
         jButton1.setText("KEMBALI");
+        jButton1.setFocusPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

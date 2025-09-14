@@ -43,6 +43,7 @@ public class azka extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 153, 153));
+        setUndecorated(true);
 
         jPanel2.setLayout(null);
 
@@ -78,6 +79,7 @@ public class azka extends javax.swing.JFrame {
 
         bKembali.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         bKembali.setText("KEMBALI");
+        bKembali.setFocusPainted(false);
         bKembali.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bKembaliActionPerformed(evt);

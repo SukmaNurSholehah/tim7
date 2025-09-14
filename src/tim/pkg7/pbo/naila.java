@@ -52,6 +52,7 @@ public class naila extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPnaila.setBackground(new java.awt.Color(153, 153, 255));
 
@@ -162,6 +163,7 @@ public class naila extends javax.swing.JFrame {
         jBkembali.setBackground(new java.awt.Color(51, 102, 255));
         jBkembali.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
         jBkembali.setText("KEMBALI");
+        jBkembali.setFocusPainted(false);
         jBkembali.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBkembaliActionPerformed(evt);

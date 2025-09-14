@@ -38,8 +38,10 @@ public class mainFrame extends javax.swing.JFrame {
         bAzka = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         bNiken = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(532, 532));
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
@@ -53,6 +55,7 @@ public class mainFrame extends javax.swing.JFrame {
         bSukma.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         bSukma.setForeground(new java.awt.Color(255, 255, 255));
         bSukma.setText("Sukma Nur Sholehah");
+        bSukma.setFocusPainted(false);
         bSukma.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bSukma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,6 +67,7 @@ public class mainFrame extends javax.swing.JFrame {
         bNaila.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         bNaila.setForeground(new java.awt.Color(255, 255, 255));
         bNaila.setText("Naila Binti Fauziah");
+        bNaila.setFocusPainted(false);
         bNaila.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bNaila.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,6 +79,7 @@ public class mainFrame extends javax.swing.JFrame {
         bFatim.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         bFatim.setForeground(new java.awt.Color(255, 255, 255));
         bFatim.setText("Fatimatuz Zahro'");
+        bFatim.setFocusPainted(false);
         bFatim.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bFatim.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,6 +91,7 @@ public class mainFrame extends javax.swing.JFrame {
         bAndus.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         bAndus.setForeground(new java.awt.Color(255, 255, 255));
         bAndus.setText("Muh Riyadlus Sholihiin");
+        bAndus.setFocusPainted(false);
         bAndus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bAndus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,6 +103,7 @@ public class mainFrame extends javax.swing.JFrame {
         bAzka.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         bAzka.setForeground(new java.awt.Color(255, 255, 255));
         bAzka.setText("Muh Azka Al Fawwaz");
+        bAzka.setFocusPainted(false);
         bAzka.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bAzka.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,10 +117,19 @@ public class mainFrame extends javax.swing.JFrame {
         bNiken.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         bNiken.setForeground(new java.awt.Color(255, 255, 255));
         bNiken.setText("Niken Ayu Zaskia Fironica");
+        bNiken.setFocusPainted(false);
         bNiken.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bNiken.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bNikenActionPerformed(evt);
+            }
+        });
+
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton1.setText("EXIT");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -137,7 +153,11 @@ public class mainFrame extends javax.swing.JFrame {
                             .addComponent(bFatim, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(bAndus, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(bAzka, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(117, Short.MAX_VALUE))
+                .addContainerGap(123, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(24, 24, 24))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -158,22 +178,20 @@ public class mainFrame extends javax.swing.JFrame {
                 .addComponent(bAndus, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addComponent(bAzka, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(30, 30, 30))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 538, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 538, Short.MAX_VALUE)
         );
 
         pack();
@@ -246,6 +264,10 @@ public class mainFrame extends javax.swing.JFrame {
         bSukma.setBackground(new Color(51,51,51));
     }//GEN-LAST:event_bAzkaActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       System.exit(0);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -273,6 +295,7 @@ public class mainFrame extends javax.swing.JFrame {
     private javax.swing.JButton bNaila;
     private javax.swing.JButton bNiken;
     private javax.swing.JButton bSukma;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;

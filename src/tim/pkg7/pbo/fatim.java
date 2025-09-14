@@ -40,6 +40,7 @@ public class fatim extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 204));
         jPanel1.setPreferredSize(new java.awt.Dimension(532, 445));
@@ -84,6 +85,7 @@ public class fatim extends javax.swing.JFrame {
         bKembali.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         bKembali.setForeground(new java.awt.Color(255, 255, 255));
         bKembali.setText("KEMBALI");
+        bKembali.setFocusPainted(false);
         bKembali.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bKembaliActionPerformed(evt);

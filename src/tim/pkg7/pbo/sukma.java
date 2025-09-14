@@ -42,6 +42,7 @@ public class sukma extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(153, 0, 51));
         jPanel1.setPreferredSize(new java.awt.Dimension(532, 445));
@@ -73,6 +74,7 @@ public class sukma extends javax.swing.JFrame {
         bKembali.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         bKembali.setForeground(new java.awt.Color(255, 255, 255));
         bKembali.setText("Kembali");
+        bKembali.setFocusPainted(false);
         bKembali.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bKembaliActionPerformed(evt);
@@ -163,7 +165,7 @@ public class sukma extends javax.swing.JFrame {
                                 .addComponent(jLabel7)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                                 .addComponent(bKembali)
                                 .addGap(87, 87, 87))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -174,7 +176,7 @@ public class sukma extends javax.swing.JFrame {
                         .addComponent(jLabel11)
                         .addGap(328, 328, 328)
                         .addComponent(jLabel10)))
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

@@ -76,6 +76,7 @@ public class niken extends javax.swing.JFrame {
 
         b_kembali.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         b_kembali.setText("KEMBALI");
+        b_kembali.setFocusPainted(false);
         b_kembali.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b_kembaliActionPerformed(evt);
