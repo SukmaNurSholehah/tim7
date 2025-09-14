@@ -182,6 +182,7 @@ public class mainFrame extends javax.swing.JFrame {
 
     private void bNailaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNailaActionPerformed
         // TODO add your handling code here:
+         new naila().setVisible(true);
         bNaila.setBackground(new Color(0, 123, 255));  
         bNiken.setBackground(new Color(51, 51, 51));
         bSukma.setBackground(new Color(51, 51, 51));
