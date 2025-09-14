@@ -1,0 +1,28 @@
+
+# Ignore build artifacts
+/build/
+/dist/
+
+# Ignore NetBeans private configuration
+/nbproject/private/
+/nbproject/configs/
+/nbproject/private.properties
+/nbproject/project.properties~
+
+# Ignore NetBeans-generated files
+/nbproject/genfiles.properties
+/nbproject/build-impl.xml
+
+# Ignore compiled class files
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific metadata (optional)
+*.iml
+.idea/
