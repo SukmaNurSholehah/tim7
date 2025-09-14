@@ -215,6 +215,7 @@ public class mainFrame extends javax.swing.JFrame {
 
     private void bFatimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bFatimActionPerformed
         // TODO add your handling code here:
+        new fatim().setVisible(true);
         bFatim.setBackground(new Color(0, 123, 255));  
         bNiken.setBackground(new Color(51, 51, 51));
         bNaila.setBackground(new Color(51, 51, 51));
