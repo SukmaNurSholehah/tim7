@@ -3,8 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package tim.pkg7.pbo;
-
-import com.formdev.flatlaf.FlatLightLaf;
 import java.awt.Color;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -45,7 +43,6 @@ public class mainFrame extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(532, 532));
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel1.setPreferredSize(new java.awt.Dimension(532, 532));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -105,8 +102,6 @@ public class mainFrame extends javax.swing.JFrame {
                 bAzkaActionPerformed(evt);
             }
         });
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tim/pkg7/pbo/foto/logo-itm-50.png"))); // NOI18N
 
         bNiken.setBackground(new java.awt.Color(51, 51, 51));
         bNiken.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -251,10 +246,7 @@ public class mainFrame extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        try {
-            UIManager.setLookAndFeel(new FlatLightLaf());
-        } catch (UnsupportedLookAndFeelException unsupportedLookAndFeelException) {
-        }
+        
         //</editor-fold>
 
         /* Create and display the form */
