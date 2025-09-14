@@ -37,7 +37,7 @@ public class azka extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         jLabel10.setText("jLabel10");
 
@@ -94,15 +94,15 @@ public class azka extends javax.swing.JFrame {
         jPanel2.add(jLabel7);
         jLabel7.setBounds(220, 260, 290, 20);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\USER\\Pictures\\baru...jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tim/pkg7/pbo/tim7/baru...jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
         jPanel2.add(jLabel1);
         jLabel1.setBounds(20, 120, 180, 190);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\USER\\Pictures\\188743-883619745_large-ezgif.com-video-to-gif-converter,,.gif")); // NOI18N
-        jLabel4.setText("jLabel4");
-        jPanel2.add(jLabel4);
-        jLabel4.setBounds(0, 0, 520, 450);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tim/pkg7/pbo/tim7/188743-883619745_large-ezgif.com-video-to-gif-converter,,.gif"))); // NOI18N
+        jLabel5.setText("jLabel5");
+        jPanel2.add(jLabel5);
+        jLabel5.setBounds(0, 0, 520, 460);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -167,7 +167,7 @@ public class azka extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

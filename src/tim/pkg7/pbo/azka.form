@@ -174,7 +174,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\USER\Pictures\baru...jpg"/>
+              <Image iconType="3" name="/tim/pkg7/pbo/tim7/baru...jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
@@ -184,16 +184,16 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel4">
+        <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\USER\Pictures\188743-883619745_large-ezgif.com-video-to-gif-converter,,.gif"/>
+              <Image iconType="3" name="/tim/pkg7/pbo/tim7/188743-883619745_large-ezgif.com-video-to-gif-converter,,.gif"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="jLabel4"/>
+            <Property name="text" type="java.lang.String" value="jLabel5"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="0" y="0" width="520" height="450"/>
+              <AbsoluteConstraints x="0" y="0" width="520" height="460"/>
             </Constraint>
           </Constraints>
         </Component>
