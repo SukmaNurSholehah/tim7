@@ -34,14 +34,12 @@ public class azka extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        bKembali = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
         jLabel10.setText("jLabel10");
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\USER\\Pictures\\gif_with_transparent_logo.gif")); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 153, 153));
@@ -52,19 +50,19 @@ public class azka extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Nama     : Muhammad Azka Al fauwaz");
         jPanel2.add(jLabel8);
-        jLabel8.setBounds(220, 140, 254, 20);
+        jLabel8.setBounds(220, 140, 251, 20);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("NIM        : 202457201044");
         jPanel2.add(jLabel9);
-        jLabel9.setBounds(220, 170, 164, 20);
+        jLabel9.setBounds(220, 170, 165, 20);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Prodi      : Sistem Informasi");
         jPanel2.add(jLabel11);
-        jLabel11.setBounds(220, 200, 180, 20);
+        jLabel11.setBounds(220, 200, 177, 20);
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
@@ -76,17 +74,17 @@ public class azka extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("BIODATA DIRI");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(130, 30, 242, 48);
+        jLabel2.setBounds(130, 30, 243, 48);
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setText("KEMBALI");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        bKembali.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        bKembali.setText("KEMBALI");
+        bKembali.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                bKembaliActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1);
-        jButton1.setBounds(360, 380, 120, 32);
+        jPanel2.add(bKembali);
+        bKembali.setBounds(360, 380, 120, 32);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -118,11 +116,13 @@ public class azka extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void bKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bKembaliActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        dispose();
+    }//GEN-LAST:event_bKembaliActionPerformed
 
     /**
      * @param args the command line arguments
@@ -160,7 +160,7 @@ public class azka extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton bKembali;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
